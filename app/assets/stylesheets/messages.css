@@ -124,27 +124,35 @@
 }
 
 .form {
+  width: 100%;
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
   display: flex;
-  justify-content: space-between;
 }
 
 .form-input {
+  background-color: white;
   display: flex;
   width: 100%;
-  height: 50px;
-  padding-left: 10px;
-  margin-right: 15px;
-  border: none;
-  background-color: white;
 }
 
-.submit {
-  font-size: 16px;
-  color: white;
-  background-color: #38aef0;
-  height: 50px;
-  padding: 0 20px;
+.form-message {
   border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+  cursor: pointer;
 }
 
 .form-image {

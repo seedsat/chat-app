@@ -1,8 +1,7 @@
-<!-- app/views/messages/index.html.erbの<%= render "main_chat" => -->
 <div class="chat-header">
   <div class="header-left">
     <div class="room-name">
-      <p>sakura room</p>
+      <p>テストルーム</p>
     </div>
   </div>
   <div class="header-light">
@@ -42,15 +41,15 @@
   </div>
 </div>
 
-<div class="chat-footer">
-  <div class="form">
+<div class="form">
+  <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
     <div class="form-input">
-      <input type="text" class="form-input" placeholder="type a message">
+      <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
       <label class="form-image">
         <span class="image-file">画像</span>
-        <input type="file" class="hidden">
+        <%= f.file_field :image, class: 'hidden' %>
       </label>
     </div>
-    <input type="submit" value="送信" class="submit">
-  </div>
+    <%= f.submit '送信', class: 'form-submit' %>
+  <% end %>
 </div>
