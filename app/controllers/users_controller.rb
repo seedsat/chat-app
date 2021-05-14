@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       ## redirect_to Prefix名
       redirect_to root_path
     else
-      render action: :edit
+      render :edit
     end
   end
 
