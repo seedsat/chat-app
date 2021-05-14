@@ -1,0 +1,14 @@
+<div class="message">
+<%= message.inspect %>
+  <div class="upper-message">
+    <div class="message-user">
+      <%= message.user.name %>
+    </div>
+    <div class="message-data">
+      <%= message.user.created_at %>
+    </div>
+  </div>
+  <div class="message-text">
+    <%= message.content %>
+  </div>
+</div>
