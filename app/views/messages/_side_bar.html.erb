@@ -1,7 +1,7 @@
-<!-- app/views/messages/index.html.erbの<%= render "side_bar" => -->
+<!-- app/views/messages/index.html.erbのrender "side_bar" -->
 <div class="side-header">
   <div class="header-name">
-    <a href="#">Sakura</a>
+    <%= link_to "#{current_user.name}", edit_user_path(current_user) %>
   </div>
   <div class="side-link">
     <a href=#>チャット作成する</a>
